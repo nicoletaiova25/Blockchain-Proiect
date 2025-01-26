@@ -1,0 +1,239 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App.css */
+
+/* Stiluri generale */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+input, textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.3);
+}
+
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.bg-blue-500 {
+  background-color: #3498db;
+}
+
+.bg-blue-600 {
+  background-color: #2980b9;
+}
+
+.bg-green-500 {
+  background-color: #27ae60;
+}
+
+.bg-green-600 {
+  background-color: #1e8449;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-red-500 {
+  color: #e74c3c;
+}
+
+/* Card pentru proiect */
+.p-4 {
+  padding: 16px;
+}
+
+.border {
+  border: 1px solid #ddd;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.md\\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.lg\\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-8 {
+  margin-bottom: 32px;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.text-lg {
+  font-size: 18px;
+}
+
+/* Centrare */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* Box-uri stilizate */
+.meta-box {
+  background-color: #fef6e4; /* Pastel deschis */
+  border: 1px solid #f1e4d1;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Box-uri pentru "Create Project" și "Active Projects" */
+/* Asigură egalitatea lățimilor pentru form-box și projects-box */
+.form-box, .projects-box {
+  flex: 1; /* Împarte spațiul în mod egal */
+  min-width: 0; /* Evită depășirile */
+  
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between; /* Separă secțiunile */
+  align-items: flex-start; /* Aliniere sus */
+  gap: 16px; /* Spațiere între ele */
+}
+
+
+/* Background pastelat pentru box-uri */
+.form-box {
+  background-color: #e8f4f8;
+  
+}
+
+.projects-box {
+  background-color: #eaf6ea;
+}
+
+.input-short {
+  width: 600px; /* Ajustează lățimea după preferință */
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.input-shorter {
+  width: 300px; /* Ajustează lățimea după preferință */
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+
+/* Alte stiluri */
+button {
+  margin-left: 100px;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
